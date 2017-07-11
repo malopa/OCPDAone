@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sasiboy.ocpda.Bprofile">
+
+    <ImageView
+        android:id="@+id/IvView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:srcCompat="@drawable/pad4"
+        android:layout_below="@+id/ImBtnCamera"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/IvView"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/etPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etName"
+        android:layout_alignStart="@+id/etName"
+        android:layout_below="@+id/etName"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:hint="Price"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etName"
+        android:layout_alignStart="@+id/etName"
+        android:layout_below="@+id/etPrice"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:hint="Description"
+        android:inputType="textPersonName" />
+
+    <ImageButton
+        android:id="@+id/ImBtnCamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+        android:onClick="onClickCamera"
+        app:srcCompat="@android:drawable/ic_menu_camera" />
+
+    <ImageButton
+        android:id="@+id/ImgBtnGallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etName"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/etName"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:onClick="onClickGallery"
+        app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+    <ImageButton
+        android:id="@+id/ImgBtnUpload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickUpload"
+        app:srcCompat="@android:drawable/ic_menu_upload"
+        android:layout_below="@+id/etPrice"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

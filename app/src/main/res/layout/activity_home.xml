@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sasiboy.ocpda.HomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_centerInParent="true" />
+        <ViewFlipper
+            android:id="@+id/bckgrndViewFlipper1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/field">
+
+            <ImageView
+                android:id="@+id/bckgrndImageView1"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pad2" />
+            <ImageView
+                android:id="@+id/bckgrndImageView2"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"
+                android:src="@drawable/pad1" />
+            <ImageView
+                android:id="@+id/bckgrndImageView3"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"
+                android:src="@drawable/pad3" />
+            <ImageView
+                android:id="@+id/bckgrndImageView4"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"
+                android:src="@drawable/pad3"
+                />
+            <ImageView
+                android:id="@+id/bckgrndImageView5"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"
+                android:src="@drawable/pad4"
+                />
+            <ImageView
+                android:id="@+id/bckgrndImageView6"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"
+                android:src="@drawable/pad5"
+                />
+            <ImageView
+                android:id="@+id/bckgrndImageView7"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"
+                android:src="@drawable/pad6"
+                />
+            <ImageView
+                android:id="@+id/bckgrndImageView8"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"
+                android:src="@drawable/pad7"
+                />
+            <ImageView
+                android:id="@+id/bckgrndImageView9"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"
+                android:src="@drawable/pad8"
+                />
+
+
+        </ViewFlipper>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSignIn"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textStyle="italic"
+        android:onClick="onClickSignIn"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="14dp" />
+    <TextView
+        android:id="@+id/tvNewUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_user_create_your_account_here"
+        android:textSize="18sp"
+        android:textColor="@color/hollow_blue"
+        android:layout_marginLeft="62dp"
+        android:layout_marginStart="62dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="13dp"
+        android:onClick="onClickSignUp"/>
+
+
+</RelativeLayout>

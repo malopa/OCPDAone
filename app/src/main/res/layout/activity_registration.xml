@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sasiboy.ocpda.Registration">
+
+    <EditText
+        android:id="@+id/etfirstname"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/input_outline"
+        android:ems="10"
+        android:hint="FirstName"
+        android:inputType="textPersonName"
+      />
+
+    <EditText
+        android:id="@+id/etLastName"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/etfirstname"
+        android:layout_alignStart="@+id/etfirstname"
+        android:layout_below="@+id/etfirstname"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/input_outline"
+        android:ems="10"
+        android:hint="LastName"
+        android:inputType="textPersonName"
+      />
+
+    <EditText
+        android:id="@+id/etUserName"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/etLastName"
+        android:layout_alignLeft="@+id/etLastName"
+        android:layout_alignRight="@+id/etLastName"
+        android:layout_alignStart="@+id/etLastName"
+        android:layout_below="@+id/etLastName"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/input_outline"
+        android:ems="10"
+        android:hint="UserName"
+        android:inputType="textPersonName"
+     />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/etUserName"
+        android:layout_alignStart="@+id/etUserName"
+        android:layout_below="@+id/etUserName"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/input_outline"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        />
+
+    <EditText
+        android:id="@+id/etPhone"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/etCPassword"
+        android:layout_alignLeft="@+id/etCPassword"
+        android:layout_alignRight="@+id/etCPassword"
+        android:layout_alignStart="@+id/etCPassword"
+        android:layout_below="@+id/etCPassword"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/input_outline"
+        android:ems="10"
+        android:hint="Phone"
+        android:inputType="phone"
+       />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickRegister"
+        android:text="Register"
+        android:background="@color/hollow_blue"
+        android:layout_marginBottom="28dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/etCPassword"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/etPassword"
+        android:layout_alignLeft="@+id/etPassword"
+        android:layout_alignRight="@+id/etPassword"
+        android:layout_alignStart="@+id/etPassword"
+        android:layout_below="@+id/etPassword"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/input_outline"
+        android:ems="10"
+        android:hint="Retype password"
+        android:inputType="textPassword"
+      />
+
+    <EditText
+        android:id="@+id/etLocation"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/etPhone"
+        android:layout_alignLeft="@+id/etPhone"
+        android:layout_alignRight="@+id/etPhone"
+        android:layout_alignStart="@+id/etPhone"
+        android:layout_below="@+id/etPhone"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/input_outline"
+        android:ems="10"
+        android:hint="Location"
+        android:inputType="textPersonName"
+    />
+
+    <EditText
+        android:id="@+id/etStatus"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/etLocation"
+        android:layout_alignStart="@+id/etLocation"
+        android:layout_alignTop="@+id/etLocation"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/input_outline"
+        android:ems="10"
+        android:hint="Buyer/Saler"
+        android:inputType="textPersonName"
+        />
+</RelativeLayout>
